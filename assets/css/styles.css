@@ -1,0 +1,329 @@
+/* 
+blue-light:#458cca;
+blue-normal:#1975bc;
+blue-dark:#302660;
+ */
+* {
+  /* font-family: "Josefin Sans", sans-serif; */
+}
+
+.blue-light-text {
+  color: #458cca;
+}
+.blue-normal-text {
+  color: #1975bc;
+}
+.blue-dark-text {
+  color: #302660;
+}
+
+.blue-light-bg {
+  background-color: #458cca;
+}
+.blue-normal-bg {
+  background-color: #1975bc;
+}
+.blue-dark-bg {
+  background-color: #302660;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.content {
+  position: relative;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(148, 187, 233, 1) 99%
+  );
+}
+.title {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: hsl(206, 77%, 42%);
+}
+.sub-title {
+  position: absolute;
+  bottom: 0;
+}
+
+.e-title {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  left: 50px;
+}
+
+.e-menu {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  width: 100%;
+  .navbar-nav {
+    list-style: none;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    padding-left: 1rem;
+    background: rgb(69, 140, 202);
+    background: linear-gradient(
+      90deg,
+      rgba(69, 140, 202, 1) 0%,
+      rgba(25, 117, 188, 1) 51%,
+      rgba(48, 38, 96, 1) 100%
+    );
+  }
+
+  .nav-link {
+    /* padding: 1rem 1rem;
+    margin: 0 1rem; */
+    border-bottom: 2px solid transparent;
+    margin: 0.5rem 2rem;
+  }
+  .nav-link:hover {
+    border-bottom: 2px solid white;
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+
+  /* .nav-link.active {
+    border-bottom: 4px solid white;
+  } */
+
+  .nav-item {
+    color: white;
+    font-weight: 600;
+  }
+}
+
+.e-content {
+  padding-top: 100px;
+}
+
+.tag-1 {
+  font-size: 3rem;
+}
+
+.part-1 {
+  position: absolute;
+  right: 0;
+  transform: rotate(70deg);
+}
+
+.tut-name {
+  position: absolute;
+  bottom: 40px;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  z-index: 12;
+}
+
+.vw-full {
+  width: 100vw;
+}
+
+.banner-text-1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #302660;
+}
+.banner-text-2 {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #302660;
+}
+
+.head-train {
+  text-align: center;
+  padding: 1rem 0;
+}
+.card-bg {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+.card-bg-2 {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.card-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.35;
+  width: 150px !important;
+}
+
+.card-text {
+  position: relative;
+  z-index: 2;
+  font-weight: 200;
+}
+
+.image {
+  background: #fff;
+  width: 100%;
+  height: 165px;
+}
+
+.image-contain {
+  object-fit: cover;
+  object-position: center;
+}
+
+.pd-2 {
+  padding: 2rem !important;
+}
+
+.card-title {
+  color: #302660 !important;
+}
+
+.success-part {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.item-wrap {
+  display: flex;
+  padding: 0.2rem;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.2rem;
+  border-radius: 0.5rem;
+}
+
+.item-wrap:hover {
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.mark-round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-right: 0.2rem;
+}
+
+.reading-col {
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.writing-col {
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+}
+
+.listen-col {
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+}
+
+.contact-round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 1.5rem;
+  margin-right: 0.2rem;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.contact-round:hover {
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.phone-col {
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.mail-col {
+  background: #8a2387; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f27121,
+    #e94057,
+    #8a2387
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f27121,
+    #e94057,
+    #8a2387
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.whats-col {
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.loc-col {
+  background: #ff512f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f09819,
+    #ff512f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f09819,
+    #ff512f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+footer {
+  background-color: rgb(220, 220, 220);
+  text-align: center;
+  color: #302660;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+}
+
+.go-top {
+  right: 10px;
+  bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-text-1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .banner-text-2 {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+
+  .e-content {
+    padding-top: 50px;
+  }
+}
